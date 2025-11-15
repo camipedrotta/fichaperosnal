@@ -1,0 +1,203 @@
+:root {
+    --bg: #f2f2f7;
+    --text: #222;
+    --soft: #666;
+    --header1: #8e739f;
+    --header2: #8e739f;
+    --accent-blue: #c7d8ff;
+    --accent-pink: #ffb3f4;
+    --accent-lila: #ffd4ff;
+}
+
+body.dark-mode {
+    --bg: #0b0a13;
+    --text: #302525;
+    --soft: #cfcfcf;
+    --header1: #352c3e;
+    --header2: #352c3e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.site-header {
+    width: 100%;
+    padding: 1.4rem 2rem;
+    color: #fff;
+    background: linear-gradient(var(--header1), var(--header2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.profile-top {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.avatar-wrapper {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid #8e739f;
+    overflow: hidden;
+    margin: auto;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student-name {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.main-nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 0.45rem 1.3rem;
+    border-radius: 999px;
+    background-color: var(--accent-lila);
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.nav-link.active {
+    border: 2px solid #fff;
+}
+
+.info-grid {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.info-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.2rem;
+}
+
+.info-label {
+    font-size: 0.75rem;
+    color: #a026b5;
+    margin-bottom: 0.2rem;
+}
+
+.contact-section {
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-group.half {
+    flex: 1;
+}
+
+.form-group.full {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.submit-btn {
+    background: #8e739f;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 10px;
+}
+
+.clear-btn {
+    background: #ddd;
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 10px;
+}
+
+.site-footer {
+    width: 100%;
+    padding: 0%;
+    margin-top: 0%;
+    background: #ededed;
+    text-align: center;
+}
+
+.repo-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #8e739f;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition: 0.2s ease;
+    z-index: 999;
+}
+
+.repo-btn:hover {
+    background: #8c82ff;
+    transform: scale(1.05);
+}

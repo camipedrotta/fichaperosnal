@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-text">
+            <h1>Ficha Personal</h1>
+            <p>Perfil de Estudiante</p>
+        </div>
+
+        <button id="theme-toggle" class="theme-toggle">☾</button>
+    </header>
+
+    <main>
+        <section class="profile-top">
+            <div class="avatar-wrapper">
+                <img src="img/cami.jpg" alt="Foto de Camila">
+            </div>
+
+            <h2 class="student-name">Camila María Pedrotta</h2>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="https://camipedrotta.github.io/casamagno/" target="_blank" class="nav-link">Local Com</a>
+                <a href="https://camipedrotta.github.io/thisisus/" target="_blank" class="nav-link">Fan Page</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+        </section>
+
+        <section class="contact-section">
+            <h3 class="section-title">Contacto</h3>
+
+            <form id="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="name">Nombre completo:</label>
+                        <input type="text" id="name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group half">
+                        <label for="age">Edad:</label>
+                        <input type="text" id="age" pattern="[0-9]*">
+                        <span class="error-message" id="age-error"></span>
+                    </div>
+                </div>
+
+                <div class="form-group full">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group full">
+                    <label for="message">Comentario:</label>
+                    <textarea id="message" rows="4"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">ENVIAR</button>
+                    <button type="button" id="clear-btn" class="clear-btn">BORRAR</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Todos los derechos reservados</p>
+    </footer>
+
+    <a href="https://github.com/camipedrotta/fichaperosnal"
+       class="repo-btn"
+       target="_blank">REPOSITORIO</a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
